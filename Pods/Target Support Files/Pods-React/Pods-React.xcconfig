@@ -1,1 +1,1 @@
-PODS_REACT_OTHER_LDFLAGS = -l"icucore" -framework "JavaScriptCore"
+PODS_REACT_OTHER_LDFLAGS = -framework "JavaScriptCore"

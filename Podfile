@@ -1,3 +1,3 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-pod 'React', '~> 0.2'
+pod 'React', :git => 'https://github.com/facebook/react-native'

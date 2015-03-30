@@ -1,12 +1,21 @@
 PODS:
-  - React (0.2.1):
-    - React/Core (= 0.2.1)
-  - React/Core (0.2.1)
+  - React (0.3.1):
+    - React/Core (= 0.3.1)
+  - React/Core (0.3.1)
 
 DEPENDENCIES:
-  - React (~> 0.2)
+  - React (from `https://github.com/facebook/react-native`)
+
+EXTERNAL SOURCES:
+  React:
+    :git: https://github.com/facebook/react-native
+
+CHECKOUT OPTIONS:
+  React:
+    :commit: 02298b59e23ec79a956aff73a394731d9a119443
+    :git: https://github.com/facebook/react-native
 
 SPEC CHECKSUMS:
-  React: a7828490bf8e5976d201558a28cb812c498a0eeb
+  React: 78d8905a15ecfd3c6b6b20abe4ca3fc49cb04b3b
 
 COCOAPODS: 0.36.0
