@@ -31,3 +31,5 @@ RCTJSLog> "Running application "ReactCocoaPodsDemo" with appParams: {"rootTag":1
 ```
 
 Seemingly the `<Text>` component in `index.ios.js` is not working. But why?
+
+The above issue was noted here: [facebook/react-native#519](https://github.com/facebook/react-native/issues/519)
