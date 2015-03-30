@@ -1,0 +1,19 @@
+#!/bin/bash
+#
+# Usage: script/server to start a local react-native packager that allows for
+#   live reloading of our project
+
+function check_dependency() {
+  command -v $1 >/dev/null 2>&1 || {
+    echo >&2 "${1} is required. Please install or ask someone for help."
+    exit 1
+  }
+}
+
+check_dependency npm
+
+DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+JS_ROOT=$DIR/..
+
+cd Pods/React
+npm run start -- --root $JS_ROOT
