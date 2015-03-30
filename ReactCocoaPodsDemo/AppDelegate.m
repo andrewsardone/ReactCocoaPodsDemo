@@ -18,7 +18,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
-    self.window.rootViewController = [ViewController new];
+
+    self.window.rootViewController = [[ViewController alloc]
+        initWithScriptURL:[NSURL URLWithString:@"http://localhost:8081/index.ios.bundle"]];
     [self.window makeKeyAndVisible];
     return YES;
 }
