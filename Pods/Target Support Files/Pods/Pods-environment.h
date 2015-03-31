@@ -24,3 +24,9 @@
 #define COCOAPODS_VERSION_MINOR_React_RCTText 2
 #define COCOAPODS_VERSION_PATCH_React_RCTText 1
 
+// React/RCTWebSocketDebugger
+#define COCOAPODS_POD_AVAILABLE_React_RCTWebSocketDebugger
+#define COCOAPODS_VERSION_MAJOR_React_RCTWebSocketDebugger 0
+#define COCOAPODS_VERSION_MINOR_React_RCTWebSocketDebugger 2
+#define COCOAPODS_VERSION_PATCH_React_RCTWebSocketDebugger 1
+
