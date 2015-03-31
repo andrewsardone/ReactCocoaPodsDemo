@@ -7,7 +7,6 @@
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule InteractionManager
- * @flow
  */
 'use strict';
 
@@ -71,7 +70,7 @@ var InteractionManager = {
   /**
    * Schedule a function to run after all interactions have completed.
    */
-  runAfterInteractions(callback: Function) {
+  runAfterInteractions(callback) {
     invariant(
       typeof callback === 'function',
       'Must specify a function to schedule.'
@@ -83,7 +82,7 @@ var InteractionManager = {
   /**
    * Notify manager that an interaction has started.
    */
-  createInteractionHandle(): number {
+  createInteractionHandle() {
     scheduleUpdate();
     var handle = ++_inc;
     _addInteractionSet.add(handle);
@@ -93,7 +92,7 @@ var InteractionManager = {
   /**
    * Notify manager that an interaction has completed.
    */
-  clearInteractionHandle(handle: number) {
+  clearInteractionHandle(handle) {
     invariant(
       !!handle,
       'Must provide a handle to clear.'

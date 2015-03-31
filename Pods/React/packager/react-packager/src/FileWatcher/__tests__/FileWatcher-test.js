@@ -21,7 +21,6 @@ describe('FileWatcher', function() {
   var Watcher;
 
   beforeEach(function() {
-    require('mock-modules').dumpCache();
     FileWatcher = require('../');
     Watcher = require('sane').WatchmanWatcher;
     Watcher.prototype.once.mockImplementation(function(type, callback) {
