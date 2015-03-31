@@ -7,7 +7,6 @@
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ImageStylePropTypes
- * @flow
  */
 'use strict';
 
@@ -40,8 +39,8 @@ var unsupportedProps = Object.keys({
   paddingHorizontal: null,
 });
 
-for (var i = 0; i < unsupportedProps.length; i++) {
-  delete ImageStylePropTypes[unsupportedProps[i]];
+for (var key in unsupportedProps) {
+  delete ImageStylePropTypes[key];
 }
 
 module.exports = ImageStylePropTypes;
