@@ -4,6 +4,13 @@ This is a demo project to try to get up and running with [React
 Native](http://facebook.github.io/react-native/) as a
 [CocoaPods](http://cocoapods.org) dependency.
 
+The key to the demo is it shows how you could encapsulate the React Native
+[dependency within a single
+`UIViewController`](https://github.com/andrewsardone/ReactCocoaPodsDemo/blob/master/ReactCocoaPodsDemo/ViewController.m).
+With this setup, you could iteratively write sets of UIs with React Native, or
+package it up as a CocoaPod for others to consume without using React Native
+themselves.
+
 ## Getting started
 
 - Clone the repo
